@@ -74,8 +74,6 @@ const ManageOrderClient: React.FC<ManageOrderClientClientProps> = ({
     [router]
   );
 
- 
-
   const columns: GridColDef[] = [
     {
       field: "id",
@@ -198,6 +196,7 @@ const ManageOrderClient: React.FC<ManageOrderClientClientProps> = ({
     },
   ];
 
+  
   return (
     <div className="max-w-[1150px] m-auto text-xl">
       <div className="mb-4 mt-8">
