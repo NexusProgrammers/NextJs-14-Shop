@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
 import { CartContextProvider } from "@/hooks/useCart";
+import React, { ReactNode } from "react";
 
 interface CartProviderProps {
-  children: React.ReactNode;
-  [key: string]: any;
+  children: ReactNode;
 }
 
-const CartProvider: React.FC<CartProviderProps> = ({ children, ...rest }) => {
-  return <CartContextProvider {...rest}>{children}</CartContextProvider>;
+const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+  return <CartContextProvider>{children}</CartContextProvider>;
 };
 
 export default CartProvider;
